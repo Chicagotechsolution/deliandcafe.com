@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deli &amp; Cafe — Neighborhood Sandwiches, Soups &amp; Coffee</title>
+<meta name="description" content="Deli &amp; Cafe is a neighborhood deli-cafe: stacked sandwiches on fresh-baked bread, daily soups, and proper coffee. Opening soon — menu posted, details to follow.">
+<link rel="canonical" href="https://deliandcafe.com/">
+<meta property="og:title" content="Deli &amp; Cafe — neighborhood sandwiches, soups &amp; coffee">
+<meta property="og:description" content="Stacked sandwiches on fresh-baked bread, daily soups, and proper coffee. Opening soon.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://deliandcafe.com/">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='3' fill='%23263038'/%3E%3Crect x='2.5' y='2.5' width='27' height='27' rx='1.5' fill='none' stroke='%23EFECE2' stroke-width='1'/%3E%3Ctext x='16' y='21.5' font-family='Georgia,serif' font-size='14' fill='%23EFECE2' text-anchor='middle'%3EDC%3C/text%3E%3Crect x='9' y='24.5' width='14' height='1.2' fill='%23E0B52F'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Work+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Deli & Cafe","url":"https://deliandcafe.com/","servesCuisine":["Deli","Sandwiches","Cafe"],"description":"Neighborhood deli-cafe serving stacked sandwiches, daily soups, and coffee. Opening soon.","acceptsReservations":"False"}
+</script>
+<style>
+:root{
+  --board:#263038; --chalk:#EFECE2; --mustard:#E0B52F; --tomato:#A93226;
+  --pickle:#6F8A4D; --rye:#8A6A43; --paper:#FBFAF5; --ink:#2B3238;
+  --disp:"Fraunces",Georgia,serif; --body:"Work Sans",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6}
+a{color:var(--tomato)}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--mustard);outline-offset:2px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header.site{background:var(--board);color:var(--chalk)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:14px;padding-bottom:14px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--chalk)}
+.brand svg{flex:none}
+.brand b{font-family:var(--disp);font-weight:500;font-size:1.3rem;letter-spacing:.01em}
+nav.main a{color:var(--chalk);text-decoration:none;margin-left:20px;font-size:.95rem}
+nav.main a:hover{color:var(--mustard)}
+.ticker{background:var(--mustard);color:#3A2F10;font-weight:600;font-size:.92rem;text-align:center;padding:8px 14px}
+/* hero = the chalkboard itself */
+.hero{background:var(--board);color:var(--chalk);
+  background-image:
+    radial-gradient(ellipse 60% 40% at 80% 10%, rgba(239,236,226,.05), transparent 60%),
+    radial-gradient(ellipse 50% 50% at 10% 90%, rgba(239,236,226,.04), transparent 60%);
+  border-bottom:10px solid var(--rye)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center;padding-top:64px;padding-bottom:64px}
+.hero h1{font-family:var(--disp);font-weight:400;font-size:clamp(2.4rem,5.6vw,4rem);line-height:1.08}
+.hero h1 .underline{box-shadow:inset 0 -.32em 0 rgba(224,181,47,.45)}
+.hero p.lede{margin-top:18px;max-width:46ch;font-size:1.1rem;color:#D8D4C6}
+.hero .actions{margin-top:28px;display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:4px;text-decoration:none;font-weight:600;font-size:.98rem;border:0;cursor:pointer;font-family:var(--body)}
+.btn-chalk{background:var(--chalk);color:var(--board)}
+.btn-chalk:hover{background:#fff}
+.btn-line{border:2px solid var(--chalk);color:var(--chalk);background:transparent}
+.btn-line:hover{border-color:var(--mustard);color:var(--mustard)}
+.hero-art{justify-self:center}
+section{padding:58px 0}
+.kicker{color:var(--tomato);font-weight:600;font-size:.95rem;margin-bottom:8px}
+h2{font-family:var(--disp);font-weight:400;font-size:clamp(1.7rem,3.2vw,2.3rem);line-height:1.15;margin-bottom:14px}
+/* menu board */
+.menu{background:var(--paper)}
+.menu .intro{max-width:62ch;margin-bottom:34px}
+.boards{display:grid;grid-template-columns:1fr 1fr;gap:0;border:2px solid var(--board)}
+.board{padding:30px 32px}
+.board + .board{border-left:2px solid var(--board)}
+.board h3{font-family:var(--disp);font-weight:400;font-size:1.4rem;margin-bottom:4px}
+.board .sub{font-size:.9rem;color:#5c646a;margin-bottom:18px}
+.dish{display:flex;align-items:baseline;gap:8px;padding:11px 0;border-bottom:1px dotted #B9B29E}
+.dish:last-child{border-bottom:0}
+.dish b{font-weight:600}
+.dish .dots{flex:1;border-bottom:1px dotted #B9B29E;transform:translateY(-4px)}
+.dish .price{font-weight:600;white-space:nowrap}
+.dish p{flex-basis:100%;font-size:.92rem;color:#565e64;margin-top:2px}
+.dish{flex-wrap:wrap}
+.tagline{margin-top:16px;font-size:.92rem;color:#565e64}
+.flag{display:inline-block;background:var(--pickle);color:#fff;font-size:.72rem;font-weight:600;border-radius:3px;padding:1px 7px;vertical-align:2px}
+.flag.hot{background:var(--tomato)}
+/* day strip */
+.days{background:var(--board);color:var(--chalk)}
+.days .wrap{display:grid;grid-template-columns:repeat(5,1fr);gap:0;text-align:center}
+.days .day{padding:26px 10px;border-left:1px solid #3a4650}
+.days .day:first-child{border-left:0}
+.days .day b{display:block;font-family:var(--disp);font-weight:400;font-size:1.05rem;color:var(--mustard);margin-bottom:6px}
+.days .day span{font-size:.92rem;color:#D8D4C6}
+/* about */
+.about .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center}
+.about p{max-width:56ch;margin-bottom:14px}
+.about-art{justify-self:center}
+/* waitlist */
+.open{background:#EFEADA;border-top:2px solid var(--board)}
+.open .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.open form{display:grid;gap:14px;background:#fff;border:2px solid var(--board);padding:26px;border-radius:4px}
+label{font-weight:600;font-size:.92rem}
+input,select,textarea{width:100%;padding:11px 12px;border:1.5px solid var(--board);border-radius:4px;background:#fff;font:inherit;font-size:.98rem}
+.form-note{font-size:.88rem;color:#565e64}
+.open ul.facts{list-style:none;padding:0;margin-top:10px}
+.open ul.facts li{padding:10px 0 10px 30px;position:relative;border-bottom:1px solid #D8D0BA}
+.open ul.facts li:last-child{border-bottom:0}
+.open ul.facts li svg{position:absolute;left:0;top:12px}
+footer.site{background:var(--board);color:#C8CDD0;padding:42px 0 28px}
+footer .wrap{display:grid;grid-template-columns:2fr 1fr 1fr;gap:36px}
+footer h3{font-family:var(--disp);font-weight:400;font-size:1.2rem;color:var(--chalk);margin-bottom:10px}
+footer a{color:#C8CDD0;text-decoration:none;display:block;padding:4px 0;font-size:.95rem}
+footer a:hover{color:var(--mustard)}
+footer .fineprint{grid-column:1/-1;border-top:1px solid #3a4650;margin-top:24px;padding-top:16px;font-size:.85rem;color:#99A2A8;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media (max-width:880px){
+  .hero .wrap,.about .wrap,.open .wrap{grid-template-columns:1fr}
+  .boards{grid-template-columns:1fr}
+  .board + .board{border-left:0;border-top:2px solid var(--board)}
+  .days .wrap{grid-template-columns:1fr 1fr;}
+  .days .day{border-left:0;border-top:1px solid #3a4650}
+  footer .wrap{grid-template-columns:1fr 1fr}
+}
+@media (max-width:540px){
+  .days .wrap{grid-template-columns:1fr}
+  footer .wrap{grid-template-columns:1fr}
+  nav.main a{margin-left:0;margin-right:16px}
+}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Deli and Cafe home">
+      <svg width="34" height="34" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="3" fill="#1d262d"/><rect x="2.5" y="2.5" width="27" height="27" rx="1.5" fill="none" stroke="#EFECE2" stroke-width="1"/><text x="16" y="20.5" font-family="Fraunces,Georgia,serif" font-weight="500" font-size="13" fill="#EFECE2" text-anchor="middle">D&amp;C</text><rect x="9" y="24.5" width="14" height="1.2" fill="#E0B52F"/></svg>
+      <b>Deli &amp; Cafe</b>
+    </a>
+    <nav class="main" aria-label="Main">
+      <a href="#menu">Menu</a>
+      <a href="#soups">Soup week</a>
+      <a href="#about">About</a>
+      <a href="#opening">Opening</a>
+    </nav>
+  </div>
+</header>
+<p class="ticker">Opening soon — the board below is our launch menu. Location and hours will be posted here first.</p>
+
+<main>
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Bread worth the <span class="underline">wait in line.</span></h1>
+      <p class="lede">A corner deli-cafe doing a short list of sandwiches properly: bread baked each morning, meats sliced to order, soup made in one pot and gone by close. Coffee that holds its own next to all that.</p>
+      <div class="actions">
+        <a class="btn btn-chalk" href="#menu">See the launch menu</a>
+        <a class="btn btn-line" href="#opening">Get opening news</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <!-- chalk etching: sandwich still life on slate -->
+      <svg width="330" height="300" viewBox="0 0 330 300" role="img" aria-label="Chalk drawing on slate of a stacked deli sandwich on a plate beside a steaming coffee cup, shaded with hatched chalk strokes">
+        <defs>
+          <filter id="chalkstroke" x="-8%" y="-8%" width="116%" height="116%">
+            <feTurbulence type="fractalNoise" baseFrequency=".55" numOctaves="2" seed="7" result="n"/>
+            <feDisplacementMap in="SourceGraphic" in2="n" scale="3.2"/>
+          </filter>
+          <filter id="chalkdust" x="-8%" y="-8%" width="116%" height="116%">
+            <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="3" seed="11" result="n"/>
+            <feDisplacementMap in="SourceGraphic" in2="n" scale="5"/>
+          </filter>
+        </defs>
+        <!-- faint smudge where the board was wiped -->
+        <g filter="url(#chalkdust)" opacity=".07" fill="#EFECE2">
+          <ellipse cx="150" cy="170" rx="140" ry="95"/>
+        </g>
+        <!-- ghost pass: the first, fainter chalk stroke under the final line -->
+        <g filter="url(#chalkdust)" fill="none" stroke="#EFECE2" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" opacity=".22">
+          <ellipse cx="151" cy="249" rx="127" ry="21"/>
+          <path d="M53 155q5-51 97-51t97 51"/>
+          <path d="M269 231v-38h45v38q0 12-22 12t-23-12z"/>
+        </g>
+        <g filter="url(#chalkstroke)" fill="none" stroke="#EFECE2" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+          <!-- plate, with hatched shadow beneath -->
+          <ellipse cx="150" cy="248" rx="128" ry="22"/>
+          <ellipse cx="150" cy="248" rx="108" ry="15" opacity=".45" stroke-width="1.2"/>
+          <g opacity=".3" stroke-width="1.1">
+            <path d="M48 268l10 4M70 274l10 3M94 278l10 2M120 281l10 1M150 282h10M180 281l10-1M206 278l10-2M232 274l10-3"/>
+          </g>
+          <!-- bottom bread -->
+          <path d="M44 226q106 20 212 0l-6 14q-100 18-200 0z"/>
+          <g opacity=".4" stroke-width="1.1"><path d="M60 232l-3 9M90 236l-3 9M122 239l-2 9M154 240l-1 9M186 239l2 9M218 236l3 9M248 231l4 9"/></g>
+          <!-- fillings: lettuce ruffle, cheese, pastrami, cheese, lettuce -->
+          <path d="M50 214q9-11 17-2t17-1 17 1 17-1 17 1 17-1 17 1 17-1 17 1 17-1 16 2" stroke="#9DB37A" stroke-width="2"/>
+          <path d="M54 202h192M60 206l8-4M104 206l8-4M150 206l8-4M196 206l8-4" stroke="#E0B52F" stroke-width="1.8"/>
+          <path d="M50 190q14 8 28 0t28 0 28 0 28 0 28 0 28 0 26 0" stroke="#C4625A" stroke-width="4.4"/>
+          <path d="M54 193q14 6 26 0M118 193q14 6 26 0M182 193q14 6 26 0" stroke="#A93226" stroke-width="1.4" opacity=".7"/>
+          <path d="M58 176h180M66 180l8-4M112 180l8-4M158 180l8-4M202 180l8-4" stroke="#E0B52F" stroke-width="1.8"/>
+          <path d="M52 164q10-10 18-2t17-1 17 1 17-1 17 1 17-1 17 1 17-1 17 1 16-2" stroke="#9DB37A" stroke-width="2"/>
+          <!-- top bread dome, hatched down the shadowed side -->
+          <path d="M52 156q4-52 98-52t98 52"/>
+          <g opacity=".45" stroke-width="1.1">
+            <path d="M196 112l14 10M204 120l15 11M212 128l14 11M220 138l13 10M227 148l11 7"/>
+            <path d="M64 142q40-14 86-15" opacity=".5"/>
+          </g>
+          <!-- seeds on the crust -->
+          <path d="M92 124q5-6 11-3M126 114q5-6 11-3M160 111q5-6 11-3M194 118q5-6 11-3M110 132q5-6 11-3M178 128q5-6 11-3" stroke-width="1.6"/>
+          <!-- toothpick + olive, with highlight left unshaded -->
+          <path d="M150 104V62"/>
+          <circle cx="150" cy="54" r="7"/>
+          <path d="M146 51q2-3 5-2" stroke-width="1.2" opacity=".7"/>
+          <path d="M151 58q3-1 4-4M149 60q4 0 6-4" stroke-width="1.1" opacity=".4"/>
+          <!-- coffee cup, hatched to the right of the handle -->
+          <path d="M268 232v-40h46v40q0 12-23 12t-23-12z"/>
+          <path d="M314 200h10q10 0 10 11t-10 11h-10"/>
+          <ellipse cx="291" cy="192" rx="23" ry="5" stroke-width="1.4" opacity=".6"/>
+          <g opacity=".4" stroke-width="1.1"><path d="M300 200v38M306 200v36M311 202v31"/></g>
+          <path d="M280 176q-5-9 0-17M296 176q-5-9 0-17" stroke-dasharray="3 5" opacity=".7"/>
+        </g>
+        <!-- chalk dust specks -->
+        <g fill="#EFECE2" opacity=".35">
+          <circle cx="58" cy="120" r=".9"/><circle cx="250" cy="96" r=".8"/><circle cx="92" cy="262" r=".9"/>
+          <circle cx="226" cy="258" r=".7"/><circle cx="162" cy="86" r=".7"/><circle cx="302" cy="252" r=".9"/>
+          <circle cx="40" cy="200" r=".7"/><circle cx="276" cy="160" r=".8"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<section id="menu" class="menu">
+  <div class="wrap">
+    <p class="kicker">The launch board</p>
+    <h2>Six sandwiches. Done right or not at all.</h2>
+    <p class="intro">This is the menu we're opening with — short on purpose. Everything on bread we bake the same morning: seeded rye, a soft milk roll, and a crusty white loaf. Prices are set for launch and may shift slightly before opening day.</p>
+    <div class="boards">
+      <div class="board">
+        <h3>Sandwiches</h3>
+        <p class="sub">On house rye, milk roll, or crusty white — your call.</p>
+        <div class="dish"><b>The Counter Stack</b><span class="dots"></span><span class="price">$13</span><p>Roast turkey, sharp cheddar, pickled red onion, herb mayo, shredded lettuce.</p></div>
+        <div class="dish"><b>Pastrami &amp; Rye</b><span class="dots"></span><span class="price">$14</span><p>Hand-sliced pastrami, mustard, house pickles. The reason the slicer exists.</p></div>
+        <div class="dish"><b>Garden Melt <span class="flag">veg</span></b><span class="dots"></span><span class="price">$12</span><p>Roasted zucchini, peppers, provolone, olive spread, pressed until the cheese gives up.</p></div>
+        <div class="dish"><b>Chicken Chop</b><span class="dots"></span><span class="price">$13</span><p>Chopped grilled chicken, celery, dill, lemon mayo on a milk roll.</p></div>
+        <div class="dish"><b>The Hot One <span class="flag hot">spicy</span></b><span class="dots"></span><span class="price">$13</span><p>Spiced beef, pepper relish, crispy onions, chili mayo. Napkins provided.</p></div>
+        <div class="dish"><b>Egg &amp; Greens <span class="flag">veg</span></b><span class="dots"></span><span class="price">$10</span><p>Soft-boiled egg, watercress, whipped butter, flaky salt on white. Breakfast until it runs out.</p></div>
+        <p class="tagline">Half sandwich + cup of soup, $11 — the regulars' order before we have regulars.</p>
+      </div>
+      <div class="board">
+        <h3>Cafe</h3>
+        <p class="sub">Espresso, drip, and a small bakery case.</p>
+        <div class="dish"><b>Drip coffee</b><span class="dots"></span><span class="price">$3</span></div>
+        <div class="dish"><b>Espresso / macchiato</b><span class="dots"></span><span class="price">$3.5</span></div>
+        <div class="dish"><b>Cappuccino / latte</b><span class="dots"></span><span class="price">$4.5</span></div>
+        <div class="dish"><b>Chai, properly simmered</b><span class="dots"></span><span class="price">$4</span></div>
+        <div class="dish"><b>Fresh lemonade / iced tea</b><span class="dots"></span><span class="price">$3.5</span></div>
+        <h3 style="margin-top:26px">Sides &amp; sweets</h3>
+        <div class="dish"><b>House pickles</b><span class="dots"></span><span class="price">$3</span></div>
+        <div class="dish"><b>Potato salad</b><span class="dots"></span><span class="price">$4</span></div>
+        <div class="dish"><b>Chocolate chunk cookie</b><span class="dots"></span><span class="price">$3</span></div>
+        <div class="dish"><b>Seasonal loaf cake, by the slice</b><span class="dots"></span><span class="price">$4</span></div>
+        <p class="tagline">Day-old bread goes home with the last customers, free. Bring a bag.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="soups" class="days" aria-label="Soup of the day schedule">
+  <div class="wrap" style="display:block;padding-top:0;padding-bottom:0">
+    <div style="padding:40px 0 8px">
+      <p class="kicker" style="color:var(--mustard)">One pot a day</p>
+      <h2 style="color:var(--chalk)">Soup week, planned like a menu.</h2>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="day"><b>Monday</b><span>Chicken &amp; orzo with lemon</span></div>
+    <div class="day"><b>Tuesday</b><span>Tomato, with grilled-cheese croutons</span></div>
+    <div class="day"><b>Wednesday</b><span>Green lentil &amp; smoked paprika</span></div>
+    <div class="day"><b>Thursday</b><span>Corn chowder, charred scallion</span></div>
+    <div class="day"><b>Friday</b><span>Cook's choice — posted on the board</span></div>
+  </div>
+  <div class="wrap" style="display:block"><p style="padding:10px 0 36px;font-size:.92rem;color:#99A2A8">Cup $5, bowl with bread $8. When the pot's empty, it's empty.</p></div>
+</section>
+
+<section id="about" class="about">
+  <div class="wrap">
+    <div class="about-art">
+      <svg width="260" height="260" viewBox="0 0 260 260" role="img" aria-label="Engraved-style still life in four panels: a seeded bread loaf, a deli slicer wheel, a coffee cup, and a jar of pickles, each shaded with fine hatching">
+        <g fill="none" stroke="#263038" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="8" y="8" width="244" height="244" stroke-width="2.2"/>
+          <rect x="13" y="13" width="234" height="234" stroke-width=".8"/>
+          <path d="M13 130h234M130 13v234" stroke-width=".8"/>
+          <!-- loaf, hatched along its underside -->
+          <g stroke-width="2">
+            <path d="M34 96q0-34 34-34t34 34q0 8-10 8H44q-10 0-10-8z"/>
+            <path d="M52 66l10 14M70 62l10 14M88 66l8 12" stroke-width="1.4"/>
+          </g>
+          <g stroke-width=".7">
+            <path d="M38 96q30 6 60 0M40 91q28 5 56 0M44 86q24 4 48 0"/>
+            <path d="M84 70q10 8 14 20M90 68q9 8 13 20"/>
+            <path d="M34 108h68M40 112h56" />
+          </g>
+          <!-- slicer wheel, radial shading -->
+          <g stroke-width="2"><circle cx="196" cy="74" r="26"/><circle cx="196" cy="74" r="7"/></g>
+          <g stroke-width=".7">
+            <circle cx="196" cy="74" r="21"/><circle cx="196" cy="74" r="16"/>
+            <path d="M203 81l12 12M206 76l15 8M205 69l16 2M203 64l13-7"/>
+            <path d="M160 104h72M166 108h60" stroke-width="1.2"/>
+          </g>
+          <!-- cup, steam and vertical hatch on the shadow side -->
+          <g stroke-width="2">
+            <path d="M44 172v34q0 10 24 10t24-10v-34z"/><path d="M92 178h8q9 0 9 9t-9 9h-8"/>
+            <ellipse cx="68" cy="172" rx="24" ry="5" stroke-width="1.2"/>
+          </g>
+          <g stroke-width=".7"><path d="M78 176v38M84 177v35M89 179v30M68 230q18-1 22-8"/></g>
+          <path d="M56 160q-4-7 0-13M72 160q-4-7 0-13" stroke-dasharray="2 4" stroke-width="1.3"/>
+          <!-- pickle jar: glass highlight left clear, hatch on the right -->
+          <g stroke-width="2"><rect x="170" y="156" width="52" height="60" rx="6"/><rect x="178" y="146" width="36" height="10" rx="3"/></g>
+          <path d="M182 172v30M196 168v34M210 172v30" stroke="#55703B" stroke-width="2"/>
+          <g stroke-width=".7">
+            <path d="M214 160v52M218 162v48"/>
+            <path d="M176 162v18" stroke-width="1.1"/>
+            <path d="M172 216h48" />
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div>
+      <p class="kicker">About the shop</p>
+      <h2>A deli with a cafe's patience.</h2>
+      <p>Most delis rush the coffee. Most cafes buy the bread. We're building one counter that takes both halves seriously: the slicer and the espresso machine share the same bench, and the morning bake sets the day's schedule.</p>
+      <p>The shop is small — a dozen seats, a window bench, and a case you can see straight into. We'd rather sell out of six good sandwiches than keep thirty mediocre ones on a laminated menu.</p>
+      <p>We're finishing the buildout now. Where, exactly? That's the one thing we're keeping on the board inside until the paint dries — join the opening list below and you'll know before the sign goes up.</p>
+    </div>
+  </div>
+</section>
+
+<section id="opening" class="open">
+  <div class="wrap">
+    <div>
+      <p class="kicker">Opening news</p>
+      <h2>First to know, first in line.</h2>
+      <ul class="facts">
+        <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#263038" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="10" cy="10" r="8"/><path d="M10 5.5V10l3 2"/></svg>Opening date and hours announced to the list first, then posted here.</li>
+        <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#263038" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8l7-5 7 5v8a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M8 17v-6h4v6"/></svg>Neighborhood preview day for the list before the public opening.</li>
+        <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#263038" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 11c0-2.5 2.7-4 6-4s6 1.5 6 4H4z"/><path d="M4 13h12M5 16h10"/></svg>No spam — a handful of notes between now and opening day, then we're done.</li>
+      </ul>
+    </div>
+    <form action="#" method="post" onsubmit="event.preventDefault();this.querySelector('.form-note').textContent='Thanks — the list opens with our announcement. Nothing you typed left your browser.';">
+      <div>
+        <label for="name">Name</label>
+        <input id="name" name="name" autocomplete="name" required>
+      </div>
+      <div>
+        <label for="hood">Your neighborhood (optional)</label>
+        <input id="hood" name="neighborhood" autocomplete="address-level2">
+      </div>
+      <div>
+        <label for="order">What should never leave the menu?</label>
+        <textarea id="order" name="wish" rows="3" placeholder="e.g., keep the pastrami on rye forever"></textarea>
+      </div>
+      <button class="btn btn-chalk" style="background:var(--board);color:var(--chalk)" type="submit">Join the opening list</button>
+      <p class="form-note">Sign-ups open at launch — nothing leaves your browser yet.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div>
+      <h3>Deli &amp; Cafe</h3>
+      <p style="max-width:40ch;font-size:.95rem">A neighborhood deli-cafe: bread baked each morning, sandwiches built to order, one pot of soup a day, proper coffee.</p>
+    </div>
+    <div>
+      <h3>Shop</h3>
+      <a href="#menu">Menu</a>
+      <a href="#soups">Soup week</a>
+      <a href="#about">About</a>
+      <a href="#opening">Opening list</a>
+    </div>
+    <div>
+      <h3>Site</h3>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/terms.html">Terms</a>
+    </div>
+    <div class="fineprint">
+      <span>© 2026 Deli &amp; Cafe. All rights reserved.</span>
+      <span>We're not open yet — menu and prices shown are our launch plan and may change.</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
